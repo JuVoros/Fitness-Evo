@@ -261,14 +261,15 @@ h2 {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     align-items: start;
 }
 
 .about-image {
-    position: sticky;
-    top: 100px;
+    position: relative;
+    top: 0;
+    width: 100%;
 }
 
 .about-image img {
@@ -276,7 +277,7 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
     object-fit: cover;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 16 / 9;
     transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease;
 }
 
@@ -598,8 +599,8 @@ footer {
     .about-image {
         position: relative;
         top: 0;
-        max-width: 28rem;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: 0;
     }
 
     .contact-content {
@@ -726,7 +727,7 @@ footer {
 
     /* About page */
     .about-image img {
-        aspect-ratio: 3 / 2;
+        aspect-ratio: 16 / 9;
     }
 
     .about-text h3 {
